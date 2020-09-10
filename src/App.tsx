@@ -1,10 +1,25 @@
 import React from 'react';
 
-import { Container } from './styles';
+import logoImg from './assets/personalLogo3.png';
+
+import {
+  GlobalStyle,
+  Container,
+  SidebarContainer,
+  SiteContent,
+} from './styles';
 
 const App: React.FC = () => (
   <Container>
-    <h1>Hello world</h1>
+    <SidebarContainer>
+      <img src={logoImg} alt="SN" />
+    </SidebarContainer>
+
+    <SiteContent>
+      <h1>Hello world</h1>
+    </SiteContent>
+
+    <GlobalStyle />
   </Container>
 );
 
