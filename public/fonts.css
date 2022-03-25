@@ -1,0 +1,8 @@
+@font-face {
+  font-family: NTR;
+  src: url(./NTR-Regular.ttf);
+}
+
+* {
+  font-family: 'NTR';
+}
