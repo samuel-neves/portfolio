@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Container, HeaderButton } from './styles';
+import { Container, HeaderButton, HeaderUnderLine } from './styles';
 
 const Header: React.FC = () => {
   const menuItems = ['About', 'Experience', 'Projects', 'Contact'];
@@ -10,6 +10,7 @@ const Header: React.FC = () => {
       {menuItems.map(item => (
         <HeaderButton>
           <h1>{item}</h1>
+          <HeaderUnderLine />
         </HeaderButton>
       ))}
     </Container>
