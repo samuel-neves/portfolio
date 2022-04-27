@@ -1,11 +1,17 @@
 import React from 'react';
 
-import { Container } from './styles';
+import { Container, HeaderButton } from './styles';
 
 const Header: React.FC = () => {
+  const menuItems = ['About', 'Experience', 'Projects', 'Contact'];
+
   return (
     <Container>
-      <h1>Header</h1>
+      {menuItems.map(item => (
+        <HeaderButton>
+          <h1>{item}</h1>
+        </HeaderButton>
+      ))}
     </Container>
   );
 };
