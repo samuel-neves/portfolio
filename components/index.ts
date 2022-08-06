@@ -1,3 +1,4 @@
 import Header from './Header';
+import IntroductionSection from './IntroductionSection';
 
-export { Header };
+export { Header, IntroductionSection };

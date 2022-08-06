@@ -11,6 +11,7 @@ import SmallTubeSlice from './Tube_Short_X2_-_Thin0006.png';
 import DeformedGreenSphere from './deformed-sphere.png';
 import GitSymbol from './git-symbol.png';
 import CodeSymbol from './code-symbol.png';
+import ProfilePicture from './profile-picture.png';
 
 export {
   CubeMissingTopLeftPart,
@@ -26,4 +27,5 @@ export {
   DeformedGreenSphere,
   GitSymbol,
   CodeSymbol,
+  ProfilePicture,
 };

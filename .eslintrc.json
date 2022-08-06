@@ -50,7 +50,8 @@
         "tsx": "never"
       }
     ],
-    "import/prefer-default-export": "off"
+    "import/prefer-default-export": "off",
+    "jsx-a11y/img-redundant-alt": "off"
   },
   "settings": {
     "import/resolver": {
