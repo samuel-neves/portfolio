@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import { HeaderComponentProps } from './index';
 
-export const Container = styled.div`
+export const Container = styled.div<HeaderComponentProps>`
   position: fixed;
   top: 0;
   left: 0;
@@ -8,13 +9,16 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: ${props => (props.scrolled ? '#00000066' : 'transparent')};
+  transition: all 0.2s ease-out;
 `;
 
-export const HeaderButton = styled.button`
+export const HeaderButton = styled.button<HeaderComponentProps>`
   color: ${props => props.theme.color};
-  margin: 12px 48px;
+  margin: ${props => (props.scrolled ? '12px' : '36px')} 48px;
   padding: 0 12px;
   font-size: 20px;
+  transition: all 0.2s ease-out;
 
   h1 {
     font-size: 20px;
@@ -48,7 +52,7 @@ export const HeaderUnderLine = styled.div`
   box-shadow: 1px 1px 6px ${props => props.theme.accentColor};
   height: 4px;
   border-radius: 4px;
-  width: 90%;
+  width: 100%;
   position: relative;
   top: -8px;
   opacity: 0;

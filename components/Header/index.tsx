@@ -2,13 +2,19 @@ import React from 'react';
 
 import { Container, HeaderButton, HeaderUnderLine } from './styles';
 
-const Header: React.FC = () => {
+interface HeaderComponentProps {
+  scrolled: boolean;
+}
+
+export type { HeaderComponentProps };
+
+const Header: React.FC<HeaderComponentProps> = ({ scrolled }) => {
   const menuItems = ['About', 'Experience', 'Projects', 'Contact'];
 
   return (
-    <Container>
+    <Container scrolled={scrolled}>
       {menuItems.map(item => (
-        <HeaderButton>
+        <HeaderButton scrolled={scrolled}>
           <h1>{item}</h1>
           <HeaderUnderLine />
         </HeaderButton>

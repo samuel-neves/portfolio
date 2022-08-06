@@ -7,7 +7,7 @@ export const theme = {
 };
 
 export const Container = styled.div`
-  min-height: 100vh;
+  padding: 0 12vw;
 `;
 
 export const GlobalStyle = createGlobalStyle`
@@ -15,6 +15,7 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'NTR';
     padding: 0;
     margin: 0;
+    color: ${theme.color};
   }
 
   body {
