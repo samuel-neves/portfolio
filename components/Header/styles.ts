@@ -25,8 +25,15 @@ export const HeaderButton = styled.button`
 
   &:hover {
     h1 {
-      color: ${props => props.theme.accentColor};
-      text-shadow: 2px 1px 3px ${props => props.theme.accentColor};
+      background: linear-gradient(
+        90deg,
+        #fff,
+        ${props => props.theme.accentColor}
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 1px 1px 6px ${props => props.theme.accentColor};
     }
 
     div {
@@ -37,8 +44,8 @@ export const HeaderButton = styled.button`
 `;
 
 export const HeaderUnderLine = styled.div`
-  background-color: ${props => props.theme.accentColor};
-  box-shadow: 2px 1px 3px ${props => props.theme.accentColor};
+  background: linear-gradient(90deg, #fff, ${props => props.theme.accentColor});
+  box-shadow: 1px 1px 6px ${props => props.theme.accentColor};
   height: 4px;
   border-radius: 4px;
   width: 90%;
