@@ -1,12 +1,14 @@
 import React from 'react';
-import { ProfilePicture } from '../../assets';
+import { ProfilePicture, CubeMissingTopLeftPart } from 'assets';
 
-import { Container, TextContainer } from './styles';
+import { Container, TextContainer, ProfilePictureContainer } from './styles';
+import { TripleImageComponent } from './components';
 
 const IntroductionSection: React.FC = () => {
   return (
     <Container>
       <TextContainer>
+        <TripleImageComponent />
         <h1>
           Hey, <b>I&apos;m Samuel</b>
         </h1>
@@ -17,7 +19,18 @@ const IntroductionSection: React.FC = () => {
           voluptatibus minus!
         </p>
       </TextContainer>
-      <img src={ProfilePicture.src} alt="profile picture" />
+      <ProfilePictureContainer>
+        <img
+          src={ProfilePicture.src}
+          alt="profile picture"
+          id="profile-picture"
+        />
+        <img
+          src={CubeMissingTopLeftPart.src}
+          alt="decorative cube missing top part"
+          id="cube-image"
+        />
+      </ProfilePictureContainer>
     </Container>
   );
 };

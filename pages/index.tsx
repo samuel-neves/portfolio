@@ -2,9 +2,8 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import { ThemeProvider } from 'styled-components';
 import { useEffect, useState } from 'react';
+import { Header, IntroductionSection } from 'components';
 import { GlobalStyle, theme, Container } from '../styles/global';
-
-import { Header, IntroductionSection } from '../components';
 
 const Home: NextPage = () => {
   const [scrollY, setScrollY] = useState(0);

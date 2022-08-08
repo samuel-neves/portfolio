@@ -14,7 +14,7 @@ const Header: React.FC<HeaderComponentProps> = ({ scrolled }) => {
   return (
     <Container scrolled={scrolled}>
       {menuItems.map(item => (
-        <HeaderButton scrolled={scrolled}>
+        <HeaderButton scrolled={scrolled} key={item}>
           <h1>{item}</h1>
           <HeaderUnderLine />
         </HeaderButton>
