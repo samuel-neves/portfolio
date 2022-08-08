@@ -21,7 +21,8 @@ const IntroductionSection: React.FC = () => {
           Born in 2001, I&apos;m from Mato Grosso, Brazil. My love for
           technology started when I was a child and started playing computer
           games in my dad&apos;s computer. I&apos;ve been studying programming
-          since I was 14 and web development since 2020!
+          since I was 14 and web development since 2020! The love of my life is
+          Marcela Fidelis, and i want to have 10 kids or more with her!
         </p>
         <img
           src={RoundedCube.src}
