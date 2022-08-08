@@ -22,6 +22,7 @@ export const Container = styled.div`
   position: absolute;
   margin-top: -140px;
   margin-left: -140px;
+  opacity: 0.8;
 
   #smaller-tube {
     width: 90px;

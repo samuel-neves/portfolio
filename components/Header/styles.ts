@@ -9,8 +9,9 @@ export const Container = styled.div<HeaderComponentProps>`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: ${props => (props.scrolled ? '#00000066' : 'transparent')};
+  background-color: ${props => (props.scrolled ? '#00000099' : 'transparent')};
   transition: all 0.2s ease-out;
+  z-index: 999;
 `;
 
 export const HeaderButton = styled.button<HeaderComponentProps>`

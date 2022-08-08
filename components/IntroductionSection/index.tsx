@@ -1,5 +1,10 @@
 import React from 'react';
-import { ProfilePicture, CubeMissingTopLeftPart } from 'assets';
+import {
+  ProfilePicture,
+  CubeMissingTopLeftPart,
+  RoundedCube,
+  OrangeArrowAsset,
+} from 'assets';
 
 import { Container, TextContainer, ProfilePictureContainer } from './styles';
 import { TripleImageComponent } from './components';
@@ -10,14 +15,20 @@ const IntroductionSection: React.FC = () => {
       <TextContainer>
         <TripleImageComponent />
         <h1>
-          Hey, <b>I&apos;m Samuel</b>
+          Hey, <span>I&apos;m Samuel</span>
         </h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ut itaque
-          ipsa esse veritatis reprehenderit voluptatum recusandae rem fugit
-          nisi. Deserunt doloribus expedita harum nemo corporis dolore dolorum
-          voluptatibus minus!
+          Born in 2001, I&apos;m from Mato Grosso, Brazil. My love for
+          technology started when I was a child and started playing computer
+          games in my dad&apos;s computer. I&apos;ve been studying programming
+          since I was 14 and web development since 2020!
         </p>
+        <img
+          src={RoundedCube.src}
+          alt="Rounded orange cube"
+          id="rounded-orange-cube"
+        />
+        <img src={OrangeArrowAsset.src} alt="Orange arrow" id="orange-arrow" />
       </TextContainer>
       <ProfilePictureContainer>
         <img
