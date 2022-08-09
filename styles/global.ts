@@ -8,6 +8,10 @@ export const theme = {
 
 export const Container = styled.div`
   padding: 0 12vw;
+
+  span {
+    color: ${props => props.theme.accentColor};
+  }
 `;
 
 export const GlobalStyle = createGlobalStyle`

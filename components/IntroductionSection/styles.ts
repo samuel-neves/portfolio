@@ -16,6 +16,7 @@ export const Container = styled.section`
   display: grid;
   grid-template-columns: 50% 50%;
   margin-top: 180px;
+  height: 500px;
 `;
 
 export const TextContainer = styled.div`
@@ -24,10 +25,6 @@ export const TextContainer = styled.div`
     position: relative;
     z-index: 4;
     font-weight: unset;
-  }
-
-  span {
-    color: ${props => props.theme.accentColor};
   }
 
   p {

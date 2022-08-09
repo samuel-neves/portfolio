@@ -14,7 +14,7 @@ export const Container = styled.div<HeaderComponentProps>`
   z-index: 999;
 `;
 
-export const HeaderButton = styled.button<HeaderComponentProps>`
+export const HeaderButton = styled.a<HeaderComponentProps>`
   color: ${props => props.theme.color};
   margin: ${props => (props.scrolled ? '12px' : '36px')} 48px;
   padding: 0 12px;
