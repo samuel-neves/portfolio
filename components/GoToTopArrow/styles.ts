@@ -12,8 +12,8 @@ export const Container = styled.button<ButtonProps>`
   border-radius: 50%;
   background-color: ${props => props.theme.accentColor};
   position: fixed;
-  top: 760px;
-  right: 80px;
+  bottom: 8vh;
+  right: 4vw;
   transition: all 0.2s ease-in-out;
   visibility: ${props => (props.visible ? 'show' : 'hidden')};
   opacity: ${props => (props.visible ? '1' : '0')};

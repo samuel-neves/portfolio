@@ -2,12 +2,8 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import { ThemeProvider } from 'styled-components';
 import { useEffect, useState } from 'react';
-import {
-  Header,
-  IntroductionSection,
-  AboutSection,
-  GoToTopArrow,
-} from 'components';
+import { Header, GoToTopArrow } from 'components';
+import { IntroductionSection, AboutSection } from 'Sections';
 import { GlobalStyle, theme, Container } from '../styles/global';
 
 const Home: NextPage = () => {
