@@ -38,4 +38,30 @@ export const GlobalStyle = createGlobalStyle`
   a {
     text-decoration: none;
   }
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2px grey;
+    border-radius: 12px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: ${theme.accentColor};
+    border-radius: 12px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(
+        0deg,
+        #fff,
+        ${theme.accentColor}
+      );
+  }
 `;

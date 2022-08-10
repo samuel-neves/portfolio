@@ -2,7 +2,12 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import { ThemeProvider } from 'styled-components';
 import { useEffect, useState } from 'react';
-import { Header, IntroductionSection } from 'components';
+import {
+  Header,
+  IntroductionSection,
+  AboutSection,
+  GoToTopArrow,
+} from 'components';
 import { GlobalStyle, theme, Container } from '../styles/global';
 
 const Home: NextPage = () => {
@@ -20,6 +25,13 @@ const Home: NextPage = () => {
     };
   }, []);
 
+  const goToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <>
       <ThemeProvider theme={theme}>
@@ -30,8 +42,33 @@ const Home: NextPage = () => {
           <link rel="stylesheet" href="/fonts.css" />
         </Head>
         <Container>
-          <Header scrolled={!!scrollY} />
+          <Header scrollY={scrollY} />
+          <GoToTopArrow setScrollYPosition={goToTop} visible={scrollY >= 680} />
           <IntroductionSection />
+          <AboutSection />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
         </Container>
       </ThemeProvider>
       <GlobalStyle />

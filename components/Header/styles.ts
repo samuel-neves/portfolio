@@ -1,5 +1,8 @@
 import styled from 'styled-components';
-import { HeaderComponentProps } from './index';
+
+interface HeaderComponentProps {
+  scrolled: boolean;
+}
 
 export const Container = styled.div<HeaderComponentProps>`
   position: fixed;
@@ -28,7 +31,8 @@ export const HeaderButton = styled.a<HeaderComponentProps>`
     color: ${props => props.theme.color};
   }
 
-  &:hover {
+  &:hover,
+  &.active {
     h1 {
       background: linear-gradient(
         90deg,
