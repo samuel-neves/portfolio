@@ -51,7 +51,8 @@
       }
     ],
     "import/prefer-default-export": "off",
-    "jsx-a11y/img-redundant-alt": "off"
+    "jsx-a11y/img-redundant-alt": "off",
+    "react/require-default-props": "off"
   },
   "settings": {
     "import/resolver": {

@@ -102,41 +102,44 @@ const technologies = [
 
 const AboutSection: React.FC = () => {
   return (
-    <Container>
-      <TextContainer>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae
-          cupiditate minima ratione illo natus rem dolorum sed sequi et,
-          adipisci maiores, dicta quas maxime beatae perferendis ab nesciunt
-          ullam. Sed?
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae
-          cupiditate minima ratione illo natus rem dolorum sed sequi et,
-          adipisci maiores, dicta quas maxime beatae perferendis ab nesciunt
-          ullam. Sed?
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae
-          cupiditate minima ratione illo natus rem dolorum sed sequi et,
-          adipisci maiores, dicta quas maxime beatae perferendis ab nesciunt
-          ullam. Sed?
-        </p>
-      </TextContainer>
-      <TechsSection>
-        <h1>Techs I have worked with:</h1>
-        <TechsContainer>
-          {technologies.map(({ name, icons }) => (
-            <TechsContent>
-              <p>{name}</p>{' '}
-              {icons.map(icon => (
-                <img src={icon} alt="icon image" key={icon} />
-              ))}
-            </TechsContent>
-          ))}
-        </TechsContainer>
-      </TechsSection>
-    </Container>
+    <>
+      <Container>
+        <TextContainer>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae
+            cupiditate minima ratione illo natus rem dolorum sed sequi et,
+            adipisci maiores, dicta quas maxime beatae perferendis ab nesciunt
+            ullam. Sed?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae
+            cupiditate minima ratione illo natus rem dolorum sed sequi et,
+            adipisci maiores, dicta quas maxime beatae perferendis ab nesciunt
+            ullam. Sed?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae
+            cupiditate minima ratione illo natus rem dolorum sed sequi et,
+            adipisci maiores, dicta quas maxime beatae perferendis ab nesciunt
+            ullam. Sed?
+          </p>
+        </TextContainer>
+        <TechsSection>
+          <h1>Techs I have worked with:</h1>
+          <TechsContainer>
+            {technologies.map(({ name, icons }) => (
+              <TechsContent>
+                <p>{name}</p>{' '}
+                {icons.map(icon => (
+                  <img src={icon} alt="icon image" key={icon} />
+                ))}
+              </TechsContent>
+            ))}
+          </TechsContainer>
+        </TechsSection>
+      </Container>
+      <br id="experience" />
+    </>
   );
 };
 

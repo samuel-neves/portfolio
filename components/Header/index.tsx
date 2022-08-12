@@ -18,12 +18,12 @@ const menuItems: MenuItems[] = [
     name: 'About',
     tag: '#about',
     minScrollY: 680,
-    maxScrollY: 2000,
+    maxScrollY: 1534,
   },
   {
     name: 'Experience',
     tag: '#experience',
-    minScrollY: 2001,
+    minScrollY: 1534,
     maxScrollY: 2002,
   },
   {

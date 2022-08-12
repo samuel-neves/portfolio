@@ -3,7 +3,7 @@ import Head from 'next/head';
 import { ThemeProvider } from 'styled-components';
 import { useEffect, useState } from 'react';
 import { Header, GoToTopArrow } from 'components';
-import { IntroductionSection, AboutSection } from 'Sections';
+import { IntroductionSection, AboutSection, ExperienceSection } from 'Sections';
 import { GlobalStyle, theme, Container } from '../styles/global';
 
 const Home: NextPage = () => {
@@ -42,6 +42,7 @@ const Home: NextPage = () => {
           <GoToTopArrow setScrollYPosition={goToTop} visible={scrollY >= 680} />
           <IntroductionSection />
           <AboutSection />
+          <ExperienceSection />
           <br />
           <br />
           <br />

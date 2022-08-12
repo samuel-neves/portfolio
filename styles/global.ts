@@ -15,11 +15,21 @@ export const Container = styled.div`
 `;
 
 export const GlobalStyle = createGlobalStyle`
-  * {
+  *, .MuiButtonBase-root {
     font-family: 'NTR';
     padding: 0;
     margin: 0;
     color: ${theme.color};
+  }
+
+  .Mui-selected {
+    color: ${theme.accentColor} !important;
+  }
+
+  .MuiTabs-indicator {
+    background-color: ${theme.accentColor} !important;
+    height: 4px;
+    border-radius: 4px;
   }
 
   body {
